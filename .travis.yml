@@ -14,5 +14,7 @@ script:
   - gradle check
   - gradle scalaStyle
 
+before_install:
+  - pip install codecov
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - codecov
