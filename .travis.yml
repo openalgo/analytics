@@ -11,8 +11,8 @@ cache:
     - $HOME/.gradle/wrapper/
 
 script:
-  - coverage gradle check
-  - coverage gradle scalaStyle
+  - gradle cobertura
+  - gradle scalaStyle
 
 before_install:
   - pip install --user codecov
